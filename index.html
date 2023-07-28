@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/fantastika-logo-icon.ico">
+    <title>Fantastika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class = "logo-header">
+            <img src="./assets/images/fantastika-logo.png" alt="Logo do Pet Shop Fantastika">
+            <span>Fatastika</span>
+        </section>
+        <nav class = "nav-header-social-media">
+            <a href="https:\\www.instagram.com" rel = "external"><img src="./assets/images/instagram-icon.png" alt="Logo Instagram" title = "Instagram" class="logo-instagram"></a>
+            <a href="https:\\www.youtube.com" rel = "external" class="logo-youtube"><img src="./assets/images/youtube-icon.png" alt="Logo do Youtube" title="Youtube"></a>
+            <a href="https:\\www.web.whatsapp.com" rel = "external"><img src="./assets/images/whatsapp-icon.png" alt="Logo do WhatsApp" title="WhatsApp"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="first-main-section"> 
+            <div class = first-main-section-content>
+                <h1>Boas vindas à nossa inauguração</h1>
+                <button id="bark-button"><img src="./assets/images/fantastika-logo.png" alt="Logo do Pet Shop Fantastika" title = "Escute em cachorrês aqui!"></button>
+                <audio src="./assets/audio/bark-sound-effect.mp3"></audio>
+            </div>
+        </section>
+        <section class = "second-main-section">
+            <div class="second-main-section-content">
+                <h1>Só banho e tosa?</h1>
+                <p>O cuidado com seu cão é prioridade para nós. Possuímos toda estrutura necessária para cuidar da saúde, higiene e bem estar emocional do seu pet.</p>
+                <button class="contact-button"><a href="">Fale conosco</a></button>
+            </div>
+        </section>
+        <section class = "third-main-section">
+            <div class="third-main-section-content">
+                <h1>Mordomia Saudável</h1>
+                <p>Temos um espaço dedicado a saúde e higiene canina, com ambientes para interação social entre cães com período monitorado, massagem e terapia.</p>
+                <button class="contact-button"><a href="">Fale conosco</a></button>
+            </div>
+        </section>
+        <section class="sponsor-main-section">
+            <span><i>apoio:</i></span>
+            <img src="./assets/images/havaianas-sponsor.png" alt="Havaianas">
+            <img src="./assets/images/americanas-sponsor.png" alt="Americanas">
+        </section>
+    </main>
+    <footer>
+        <img src="./assets/images/fantastika-logo.png" alt="">
+        <nav class="nav-footer-social-media">
+            <a href="https:\\www.instagram.com" rel = "external"><img src="./assets/images/instagram-icon.png" alt="Logo Instagram" class="logo-instagram"></a>
+            <a href="https:\\www.youtube.com" rel = "external" class="logo-youtube"><img src="./assets/images/youtube-icon.png" alt="Logo do Youtube" ></a>
+            <a href="https:\\www.web.whatsapp.com" rel = "external"><img src="./assets/images/whatsapp-icon.png" alt="Logo do WhatsApp" class="logo-whatsapp"></a>
+        </nav>
+        <nav class="nav-footer-atendimento">
+            <h3>Atendimento</h3>
+            <ul class="nav-footer-atendimento-ul">
+                <a href=""><li>Chat virtual</li></a>
+                <a href=""><li>WhatsApp</li></a>
+                <a href=""><li>Telefone</li></a>
+                <a href=""><li>Email</li></a>
+            </ul>
+        </nav>
+        <nav class="nav-footer-sobre">
+            <h3>Sobre</h3>
+            <ul class="nav-footer-sobre-ul">
+                <a href="">
+                    <li>Nosso trabalho</li>
+                </a>
+                <a href="">
+                    <li>Infraestrutura</li>
+                </a>
+                <a href="">
+                    <li>Nossas unidades</li>
+                </a>
+                <a href="">
+                    <li>Especialistas</li>
+                </a>
+            </ul>
+        </nav>
+        <nav class="nav-footer-unidades">
+            <h3>Unidades</h3>
+            <ul class="nav-footer-unidades-ul">
+                <a href="">
+                    <li>Clínica <abbr title="Rio de Janeiro">RJ</abbr></li>
+                </a>
+                <a href="">
+                    <li>Clínica <abbr title="São Paulo">SP</abbr></li>
+                </a>
+                <a href="">
+                    <li>Clínica <abbr title="Espírito Santo">ES</abbr></li>
+                </a>
+                <a href="">
+                    <li>Clínica <abbr title="Santa Catarina">SC</abbr></li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        //Selecting wich tag selector will start the script
+        const button = document.querySelector('button')
+        button.addEventListener('mouseover',function(){
+            const audio = document.querySelector('audio')
+            audio.play()
+        })
+    </script>
+</body>
+</html>
